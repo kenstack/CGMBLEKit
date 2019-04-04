@@ -1,2 +1,2 @@
-github "kdisimone/LoopKit" "tp-override-mode"
-github "kdisimone/dexcom-share-client-swift" "omni-override"
+github "kdisimone/LoopKit" "tp-override-mode-kt"
+github "kdisimone/dexcom-share-client-swift" "omni-override-kt"
