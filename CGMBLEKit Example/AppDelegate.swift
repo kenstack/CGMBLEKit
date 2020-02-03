@@ -12,7 +12,7 @@ import CoreBluetooth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, TransmitterDelegate, TransmitterCommandSource {
-
+    
     var window: UIWindow?
 
     static var sharedDelegate: AppDelegate {
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TransmitterDelegate, Tran
 
     var glucose: Glucose?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         transmitterID = UserDefaults.standard.transmitterID
 
@@ -132,4 +132,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TransmitterDelegate, Tran
             }
         }
     }
+    
+    func transmitterDidConnect(_ transmitter: Transmitter) {
+        // Ignore
+    }
+
 }
